@@ -12,6 +12,7 @@ export const obtenerService = async (req, res) => {
             data: data
         });
     } catch (err) {
+        console.log('err', err.message)
         return res.status(500).json({
             message: 'Ocurrio un error',
             code: err.code
